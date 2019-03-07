@@ -24,6 +24,24 @@ module.exports = function(config) {
       ]
     },
 
-    browsers: ['Chrome'],
+    browsers: [
+      // 'Chrome',
+      'VirtualBoxIE11onWin8'
+    ],
+
+    customLaunchers: {
+      VirtualBoxIE11onWin8: {
+        base: 'VirtualBoxIE11',
+        keepAlive: true,
+        snapshot: 'pristine',
+        uuid: 'fc2b35a6-0f88-4576-ac15-814a4022af3f'
+      }
+    },
+
+    browserConsoleLogOptions: {
+      level: 'log',
+      format: '%b %T: %m',
+      terminal: true
+    },
   })
 }

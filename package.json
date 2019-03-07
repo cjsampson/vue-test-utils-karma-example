@@ -36,6 +36,7 @@
     "karma-mocha": "^1.3.0",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-spec-reporter": "0.0.32",
+    "karma-virtualbox-ie11-launcher": "^1.2.1",
     "karma-webpack": "^2.0.9",
     "mocha": "^5.0.0",
     "vue-loader": "^13.0.5",
