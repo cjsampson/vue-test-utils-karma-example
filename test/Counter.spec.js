@@ -1,3 +1,4 @@
+import 'babel-polyfill'
 import { expect } from 'chai'
 import { shallowMount } from '@vue/test-utils'
 import Counter from '../src/Counter.vue'
