@@ -5,7 +5,9 @@ module.exports = function(config) {
     frameworks: ['mocha'],
 
     files: [
-      'test/**/*.spec.js'
+        { pattern: './node_modules/babel-polyfill/dist/polyfill.js', watched: false },
+        // { pattern: './node_modules/@vue/test-utils/dist/vue-test-utils.js', type: 'module', watched: false, included: true },
+        'test/**/*.spec.js'
     ],
 
     preprocessors: {
@@ -25,8 +27,8 @@ module.exports = function(config) {
     },
 
     browsers: [
-      // 'Chrome',
-      'VirtualBoxIE11onWin8'
+      'Chrome',
+    //   'VirtualBoxIE11onWin8'
     ],
 
     customLaunchers: {

@@ -2,7 +2,7 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './src/main.js',
+//   entry: ["babel-polyfill", "./src/main.js"],
   module: {
     rules: [
       {
@@ -37,7 +37,8 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'vue$': 'vue/dist/vue.esm.js'
+      'vue$': 'vue/dist/vue.esm.js',
+      sinon: 'sinon/pkg/sinon.js'
     },
     extensions: ['*', '.js', '.vue', '.json']
   },

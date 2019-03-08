@@ -1,20 +1,26 @@
 <template>
 	<div>
 	  {{ count }}
-	  <button @click="increment">Increment</button>
+	  <button @click="increment" class="button-thing">Increment</button>
+    <random-component></random-component>
 	</div>
 </template>
 
 <script>
+import RandomComponent from './RandomComponent'
 export default {
+
   data () {
     return {
       count: 0
     }
   },
-
+  mounted() {},
+  components: {
+    RandomComponent
+  },  
   methods: {
-    increment () {
+    increment: function () {
       this.count++
     }
   }
