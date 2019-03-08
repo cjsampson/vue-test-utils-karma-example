@@ -4,6 +4,9 @@
 
 ## Build Setup
 
+### Set up VirtualBoxIE11
+https://gist.github.com/rkuzsma/b0f2c144ba1c6d1f2ce847c0e81bdafa
+
 ``` bash
 # install dependencies
 npm install
