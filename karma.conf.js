@@ -27,8 +27,8 @@ module.exports = function(config) {
     },
 
     browsers: [
-      'Chrome',
-    //   'VirtualBoxIE11onWin8'
+    //   'Chrome',
+      'VirtualBoxIE11onWin8'
     ],
 
     customLaunchers: {
