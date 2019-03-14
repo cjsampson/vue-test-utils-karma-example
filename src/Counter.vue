@@ -1,12 +1,13 @@
 <template>
 	<div>
-	  {{ count }}
+    <p>Hello</p>
 	  <button @click="increment" class="button-thing">Increment</button>
-    <random-component></random-component>
 	</div>
 </template>
 
 <script>
+
+
 import RandomComponent from './RandomComponent'
 export default {
 

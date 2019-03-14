@@ -1,20 +1,30 @@
-// import 'babel-polyfill'
 import { expect } from 'chai'
-import { shallowMount, mount } from '@vue/test-utils/dist/vue-test-utils.js'
+import { shallowMount, mount } from '@vue/test-utils'
 import Counter from '../src/Counter.vue'
-import sinon from 'sinon'
-
-const util = require('util');
+// import sinon from 'sinon'
+import util from 'util'
 
 
 describe('Counter.vue', () => {
     it.only('increments count when button is clicked', async () => {
         const wrapper = mount(Counter)
-        const button = wrapper.find('button')
 
-        // console.log(util.inspect(wrapper, { showHidden: true, depth: null }));
-        // console.log(util.inspect(wrapper.find('potato'), { showHidden: true, depth: null }));
-        console.log(util.inspect(typeof button, { showHidden: true, depth: null }));
+        const button = wrapper.find('button')
+        button.trigger('click')
+        expect(wrapper.vm.count).to.equal(1)
+
+        // console.log('--------------------button---------------------')
+        // console.log(util.inspect(wrapper), { showHidden: true, depth: null });
+        // console.log('--------------------button---------------------')
+
+        // expect(wrapper.vm.count).to.equal(0)
+        // const button = wrapper.find('button')
+        // button.trigger('click')
+        // expect(wrapper.vm.count).to.equal(1)
+
+        // expect(wrapper.contains('button')).to.equal(true)
+
+        // console.log(util.inspect(button, { showHidden: true, depth: null }));
         // console.log(util.inspect(button.html(), { showHidden: true, depth: null }));
 
         // console.log(util.inspect(button, { showHidden: true, depth: null }));
@@ -26,11 +36,6 @@ describe('Counter.vue', () => {
         console.log('-----------------------------------------')
         console.log(util.inspect(Counter, { showHidden: true, depth: null }));
         console.log('-----------------------------------------')
-
-        // const wrapper = mount(Counter)
-        
-        // const stubby = sinon.stub
-        // stubby.returns(2)
 
         expect(true).to.equal(true)
     })

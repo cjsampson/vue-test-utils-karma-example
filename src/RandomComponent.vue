@@ -12,11 +12,7 @@ export default {
       randomDataProperty: 0
     }
   },
-  mounted() {
-      console.log('-----------------------------------------')
-      console.log('RANDOMCOMPONENT Mounted()')
-      console.log('-----------------------------------------')
-  },
+  mounted() {},
   methods: {
     randomMethod: function () {
       return 'I am the random component'
